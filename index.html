@@ -7,13 +7,13 @@
   <!-- OSRC CSS -->
   <link rel="stylesheet" href="https://lokrogaming.github.io/openSrc/CSS/style-open.css">
   <style>
-    body { padding: 2rem; font-family: sans-serif; }
+    body { padding: 2rem; font-family: sans-serif; background:#000; color:#fff; }
     h1 { margin-bottom: 2rem; }
     h2 { margin-top: 2rem; margin-bottom: 1rem; }
     .demo-section { margin-bottom: 3rem; }
     .demo-box { margin-bottom: 1rem; }
     pre { background: #111; color: #fff; padding: 1rem; border-radius: 8px; overflow-x: auto; }
-    code { font-family: monospace; }
+    code { font-family: monospace; white-space: pre-wrap; }
     .copy-btn {
       display: inline-block;
       margin-bottom: 0.5rem;
@@ -54,7 +54,9 @@
   font-family: "osrc-Varela Round";
   src: url("https://lokrogaming.github.io/fonts/VarelaRound-Regular.ttf") format("truetype");
 }
-body { font-family: "osrc-Varela Round", sans-serif; }
+body {
+  font-family: "osrc-Varela Round", sans-serif;
+}
     </code></pre>
   </div>
 
@@ -69,11 +71,11 @@ body { font-family: "osrc-Varela Round", sans-serif; }
 
     <button class="copy-btn" onclick="copyCode('code-buttons')">Code kopieren</button>
     <pre id="code-buttons"><code>
-<button class="osrc btn btn-glow-white">Glühend Weiß</button>
-<button class="osrc btn btn-glow-blue">Glühend Blau</button>
-<button class="osrc btn btn-glow-red">Glühend Rot</button>
-<button class="osrc btn btn-glow-green">Glühend Grün</button>
-<button class="osrc btn btn-glow-rainbow">Glühend Rainbow</button>
+&lt;button class="osrc btn btn-glow-white"&gt;Glühend Weiß&lt;/button&gt;
+&lt;button class="osrc btn btn-glow-blue"&gt;Glühend Blau&lt;/button&gt;
+&lt;button class="osrc btn btn-glow-red"&gt;Glühend Rot&lt;/button&gt;
+&lt;button class="osrc btn btn-glow-green"&gt;Glühend Grün&lt;/button&gt;
+&lt;button class="osrc btn btn-glow-rainbow"&gt;Glühend Rainbow&lt;/button&gt;
     </code></pre>
   </div>
 
@@ -88,15 +90,68 @@ body { font-family: "osrc-Varela Round", sans-serif; }
 
     <button class="copy-btn" onclick="copyCode('code-text')">Code kopieren</button>
     <pre id="code-text"><code>
-<p class="osrc glow-white">Glow Weiß</p>
-<p class="osrc glow-blue">Glow Blau</p>
-<p class="osrc glow-red">Glow Rot</p>
-<p class="osrc glow-green">Glow Grün</p>
-<p class="osrc glow-rainbow">Glow Rainbow</p>
+&lt;p class="osrc glow-white"&gt;Glow Weiß&lt;/p&gt;
+&lt;p class="osrc glow-blue"&gt;Glow Blau&lt;/p&gt;
+&lt;p class="osrc glow-red"&gt;Glow Rot&lt;/p&gt;
+&lt;p class="osrc glow-green"&gt;Glow Grün&lt;/p&gt;
+&lt;p class="osrc glow-rainbow"&gt;Glow Rainbow&lt;/p&gt;
     </code></pre>
   </div>
 
-  <!-- Grid Beispiel -->
+  <!-- Links -->
+  <div class="demo-section">
+    <h2>Links</h2>
+    <a href="#" class="link-glow-white demo-box">Link Weiß</a><br>
+    <a href="#" class="link-glow-blue demo-box">Link Blau</a><br>
+    <a href="#" class="link-glow-red demo-box">Link Rot</a><br>
+    <a href="#" class="link-glow-green demo-box">Link Grün</a><br>
+    <a href="#" class="link-glow-rainbow demo-box">Link Rainbow</a>
+
+    <button class="copy-btn" onclick="copyCode('code-links')">Code kopieren</button>
+    <pre id="code-links"><code>
+&lt;a href="#" class="osrc link-glow-white"&gt;Link Weiß&lt;/a&gt;
+&lt;a href="#" class="osrc link-glow-blue"&gt;Link Blau&lt;/a&gt;
+&lt;a href="#" class="osrc link-glow-red"&gt;Link Rot&lt;/a&gt;
+&lt;a href="#" class="osrc link-glow-green"&gt;Link Grün&lt;/a&gt;
+&lt;a href="#" class="osrc link-glow-rainbow"&gt;Link Rainbow&lt;/a&gt;
+    </code></pre>
+  </div>
+
+  <!-- Boxen / Cards -->
+  <div class="demo-section">
+    <h2>Boxen / Cards</h2>
+    <div class="box demo-box">Box Beispiel 1</div>
+    <div class="box demo-box">Box Beispiel 2</div>
+
+    <button class="copy-btn" onclick="copyCode('code-boxes')">Code kopieren</button>
+    <pre id="code-boxes"><code>
+&lt;div class="osrc box"&gt;Box Beispiel 1&lt;/div&gt;
+&lt;div class="osrc box"&gt;Box Beispiel 2&lt;/div&gt;
+    </code></pre>
+  </div>
+
+  <!-- Inputs -->
+  <div class="demo-section">
+    <h2>Inputs</h2>
+    <input type="text" placeholder="Textfeld" class="demo-box"><br>
+    <textarea placeholder="Textarea" class="demo-box"></textarea><br>
+    <select class="demo-box">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+
+    <button class="copy-btn" onclick="copyCode('code-inputs')">Code kopieren</button>
+    <pre id="code-inputs"><code>
+&lt;input type="text" placeholder="Textfeld"&gt;
+&lt;textarea placeholder="Textarea"&gt;&lt;/textarea&gt;
+&lt;select&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;
+    </code></pre>
+  </div>
+
+  <!-- Grid & Flex -->
   <div class="demo-section">
     <h2>Grid & Flex</h2>
     <div class="container">
@@ -114,18 +169,37 @@ body { font-family: "osrc-Varela Round", sans-serif; }
 
     <button class="copy-btn" onclick="copyCode('code-grid')">Code kopieren</button>
     <pre id="code-grid"><code>
-<div class="osrc container">
-  <div class="row">
-    <div class="col-4 box">Col 4</div>
-    <div class="col-4 box">Col 4</div>
-    <div class="col-4 box">Col 4</div>
+&lt;div class="osrc container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-4 box"&gt;Col 4&lt;/div&gt;
+    &lt;div class="col-4 box"&gt;Col 4&lt;/div&gt;
+    &lt;div class="col-4 box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row mt-1"&gt;
+    &lt;div class="col-6 box"&gt;Col 6&lt;/div&gt;
+    &lt;div class="col-6 box"&gt;Col 6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-center align-center box" style="height:50px;"&gt;Flexbox Zentriert&lt;/div&gt;
+    </code></pre>
   </div>
-  <div class="row mt-1">
-    <div class="col-6 box">Col 6</div>
-    <div class="col-6 box">Col 6</div>
-  </div>
-</div>
-<div class="d-flex justify-center align-center box" style="height:50px;">Flexbox Zentriert</div>
+
+  <!-- Utilities -->
+  <div class="demo-section">
+    <h2>Utility Klassen</h2>
+    <div class="bg-black p-2 demo-box">BG Schwarz</div>
+    <div class="bg-white p-2 demo-box">BG Weiß</div>
+    <div class="bg-blue p-2 demo-box">BG Blau</div>
+    <div class="bg-red p-2 demo-box">BG Rot</div>
+    <div class="bg-green p-2 demo-box">BG Grün</div>
+
+    <button class="copy-btn" onclick="copyCode('code-utilities')">Code kopieren</button>
+    <pre id="code-utilities"><code>
+&lt;div class="osrc bg-black p-2"&gt;BG Schwarz&lt;/div&gt;
+&lt;div class="osrc bg-white p-2"&gt;BG Weiß&lt;/div&gt;
+&lt;div class="osrc bg-blue p-2"&gt;BG Blau&lt;/div&gt;
+&lt;div class="osrc bg-red p-2"&gt;BG Rot&lt;/div&gt;
+&lt;div class="osrc bg-green p-2"&gt;BG Grün&lt;/div&gt;
     </code></pre>
   </div>
 
@@ -140,3 +214,4 @@ body { font-family: "osrc-Varela Round", sans-serif; }
 
 </body>
 </html>
+
