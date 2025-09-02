@@ -1,11 +1,142 @@
-<html>
-  <head>
-    <title>openSrc</title>
-  </head>
-  <body>
-    Redirecting you to Github
-    <script>
-      window.location.href="https://github.com/Lokrogaming/openSrc";
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSRC Style Script Demo</title>
+  <!-- OSRC CSS -->
+  <link rel="stylesheet" href="https://lokrogaming.github.io/openSrc/CSS/style-open.css">
+  <style>
+    body { padding: 2rem; font-family: sans-serif; }
+    h1 { margin-bottom: 2rem; }
+    h2 { margin-top: 2rem; margin-bottom: 1rem; }
+    .demo-section { margin-bottom: 3rem; }
+    .demo-box { margin-bottom: 1rem; }
+    pre { background: #111; color: #fff; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+    code { font-family: monospace; }
+    .copy-btn {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      padding: 0.3rem 0.6rem;
+      background: #222;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      border: 1px solid white;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover { background: #333; }
+  </style>
+</head>
+<body class="osrc">
+
+  <h1>OSRC Style Script Demo</h1>
+
+  <!-- Fonts -->
+  <div class="demo-section">
+    <h2>Fonts</h2>
+    <p style="font-family:'osrc-ArialRoundedMTBold';">ArialRoundedMTBold</p>
+    <p style="font-family:'osrc-Bitcount Prop Double Light';">Bitcount Prop Double Light</p>
+    <p style="font-family:'osrc-Varela Round';">Varela Round</p>
+
+    <button class="copy-btn" onclick="copyCode('code-fonts')">Code kopieren</button>
+    <pre id="code-fonts"><code>
+@font-face {
+  font-family: "osrc-ArialRoundedMTBold";
+  src: url("https://lokrogaming.github.io/fonts/arial-rounded-mt-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "osrc-Bitcount Prop Double Light";
+  src: url("https://lokrogaming.github.io/fonts/BitcountPropDouble-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "osrc-Varela Round";
+  src: url("https://lokrogaming.github.io/fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+body { font-family: "osrc-Varela Round", sans-serif; }
+    </code></pre>
+  </div>
+
+  <!-- Buttons -->
+  <div class="demo-section">
+    <h2>Buttons</h2>
+    <button class="btn btn-glow-white demo-box">Glühend Weiß</button>
+    <button class="btn btn-glow-blue demo-box">Glühend Blau</button>
+    <button class="btn btn-glow-red demo-box">Glühend Rot</button>
+    <button class="btn btn-glow-green demo-box">Glühend Grün</button>
+    <button class="btn btn-glow-rainbow demo-box">Glühend Rainbow</button>
+
+    <button class="copy-btn" onclick="copyCode('code-buttons')">Code kopieren</button>
+    <pre id="code-buttons"><code>
+<button class="osrc btn btn-glow-white">Glühend Weiß</button>
+<button class="osrc btn btn-glow-blue">Glühend Blau</button>
+<button class="osrc btn btn-glow-red">Glühend Rot</button>
+<button class="osrc btn btn-glow-green">Glühend Grün</button>
+<button class="osrc btn btn-glow-rainbow">Glühend Rainbow</button>
+    </code></pre>
+  </div>
+
+  <!-- Text Effekte -->
+  <div class="demo-section">
+    <h2>Text Effekte</h2>
+    <p class="glow-white demo-box">Glow Weiß</p>
+    <p class="glow-blue demo-box">Glow Blau</p>
+    <p class="glow-red demo-box">Glow Rot</p>
+    <p class="glow-green demo-box">Glow Grün</p>
+    <p class="glow-rainbow demo-box">Glow Rainbow</p>
+
+    <button class="copy-btn" onclick="copyCode('code-text')">Code kopieren</button>
+    <pre id="code-text"><code>
+<p class="osrc glow-white">Glow Weiß</p>
+<p class="osrc glow-blue">Glow Blau</p>
+<p class="osrc glow-red">Glow Rot</p>
+<p class="osrc glow-green">Glow Grün</p>
+<p class="osrc glow-rainbow">Glow Rainbow</p>
+    </code></pre>
+  </div>
+
+  <!-- Grid Beispiel -->
+  <div class="demo-section">
+    <h2>Grid & Flex</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 box">Col 4</div>
+        <div class="col-4 box">Col 4</div>
+        <div class="col-4 box">Col 4</div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-6 box">Col 6</div>
+        <div class="col-6 box">Col 6</div>
+      </div>
+    </div>
+    <div class="d-flex justify-center align-center box" style="height:50px;">Flexbox Zentriert</div>
+
+    <button class="copy-btn" onclick="copyCode('code-grid')">Code kopieren</button>
+    <pre id="code-grid"><code>
+<div class="osrc container">
+  <div class="row">
+    <div class="col-4 box">Col 4</div>
+    <div class="col-4 box">Col 4</div>
+    <div class="col-4 box">Col 4</div>
+  </div>
+  <div class="row mt-1">
+    <div class="col-6 box">Col 6</div>
+    <div class="col-6 box">Col 6</div>
+  </div>
+</div>
+<div class="d-flex justify-center align-center box" style="height:50px;">Flexbox Zentriert</div>
+    </code></pre>
+  </div>
+
+  <script>
+    function copyCode(id) {
+      const code = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        alert("Code kopiert!");
+      });
+    }
+  </script>
+
+</body>
 </html>
