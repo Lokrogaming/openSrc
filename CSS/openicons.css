@@ -1,5 +1,5 @@
 .iconsprite {
-    background-image: url(spritesheet.png);
+    background-image: url("https://lokrogaming.github.io/openSrc/CSS/iconspritesheet.png");
     background-repeat: no-repeat;
     display: block;
 }
