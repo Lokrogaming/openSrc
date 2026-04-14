@@ -1,0 +1,131 @@
+.iconsprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.iconsprite-air-conditioner-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -5px -5px;
+}
+
+.iconsprite-airplane-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -527px -5px;
+}
+
+.iconsprite-android-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1049px -5px;
+}
+
+.iconsprite-androidauto-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -5px -527px;
+}
+
+.iconsprite-arrow-left-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -527px -527px;
+}
+
+.iconsprite-arrow-outcome-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1049px -527px;
+}
+
+.iconsprite-arrow-right-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -5px -1049px;
+}
+
+.iconsprite-arrow-rotate-right-svgrepo-com-3 {
+    width: 512px;
+    height: 512px;
+    background-position: -527px -1049px;
+}
+
+.iconsprite-brand-github-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1049px -1049px;
+}
+
+.iconsprite-chat-writing-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1571px -5px;
+}
+
+.iconsprite-discord-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1571px -527px;
+}
+
+.iconsprite-emoji-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1571px -1049px;
+}
+
+.iconsprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -2093px -5px;
+}
+
+.iconsprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -2133px -5px;
+}
+
+.iconsprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -2173px -5px;
+}
+
+.iconsprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -2213px -5px;
+}
+
+.iconsprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -2253px -5px;
+}
+
+.iconsprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -2293px -5px;
+}
+
+.iconsprite-whatsapp-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -5px -1571px;
+}
+
+.iconsprite-youtube-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -527px -1571px;
+}
+
+.iconsprite-youtubemusic-svgrepo-com {
+    width: 512px;
+    height: 512px;
+    background-position: -1049px -1571px;
+}
